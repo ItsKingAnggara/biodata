@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="cssLink" rel="stylesheet" href="gaya.css">
+    
+    <style>
+       
+    </style>
+    <script src="script.js"></script>
+    <title>Tugas Biodata</title>
+ 
+</head>
+<body> <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="animation-container">
+        <div class="circle-path red"></div>
+        <div class="circle-path green"></div>
+        <div class="circle-path orange"></div>
+    </div>
+
+    <form action="">
+        <fieldset style="width: 400px; margin: 0 auto; padding: 30px;">
+            <legend style="font-weight: bold; padding: 0 10px; font-size: 24px;">BIODATA</legend>
+            <table cellpadding="8">
+                <tr>
+                    <td style="font-size: 18px;" >Nama:</td>
+                    <td><input type="text" name="nama" placeholder="Ketikan namamu" style="width: 200px; height: 30px; font-size: 16px;" class="aturcahaya"></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 18px;">Kelas:</td>
+                    <td>
+                        <select name="kelas" style="width: 210px; height: 35px; font-size: 16px;" class="aturcahaya">
+                            <option value="" disabled selected >Pilih kelas</option>
+                            <option value="1">X RPL 1</option>
+                            <option value="2">X RPL 2</option>
+                            <option value="3">X RPL 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size: 18px;">Jenis Kelamin: 
+                        <input type="radio" name="gender" value="L" style="margin-left: 20px;" class="aturcahaya"> L
+                        <input type="radio" name="gender" value="P" style="margin-left: 20px;" class="aturcahaya"> P
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 18px;">Hobi:</td>
+                    <td>
+                        <select name="hobi" style="width: 210px; height: 35px; font-size: 16px;" class="aturcahaya">
+                            <option value="" disabled selected> Pilih Hobi</option>
+                            <option value="membaca">Mengembangkan Game</option>
+                            <option value="menulis">Menggambar</option>
+                            <option value="olahraga">Melukis</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 18px;">Alamat:</td>
+                    <td><textarea name="alamat" rows="4" cols="30" placeholder="Masukan Alamat" style="font-size: 16px;" class="aturcahaya"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="button" onclick="alert('Terima kasih sudah mengisi')" style="width: 100px; height: 40px; font-size: 16px;" class="warnaok">OK</button>
+                        <input type="reset" value="Reset" style="width: 100px; height: 40px; font-size: 16px;" class="warnareset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

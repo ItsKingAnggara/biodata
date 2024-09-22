@@ -1,0 +1,98 @@
+/* Background gelap */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    background-image: url("bg.jpg");
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan layar */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    font-family: sans-serif;
+    
+}
+
+/* Panel biodata */
+fieldset {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+/* Animasi container untuk garis melingkar */
+.animation-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    height: 650px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Garis melingkar dengan efek glow */
+.circle-path {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, red, green) 1;
+    animation: rotateCircle 12s linear infinite;
+    
+}
+
+/* Garis dengan warna berbeda */
+.circle-path.red {
+    border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0)) 1;
+    
+    
+    animation-delay: 0s;
+}
+
+.circle-path.green {
+    border-image: linear-gradient(to right, rgb(72, 255, 0), rgb(60, 255, 0)) 1;
+    
+    animation-delay: 1s;
+}
+
+.circle-path.orange {
+    border-image: linear-gradient(to right, rgb(0, 47, 255), rgb(38, 0, 255)) 1;
+    animation-delay: 2s;
+}
+
+.aturcahaya {
+    filter: brightness(90%);
+    
+    
+}
+
+.warnaok {
+    background-color: darkblue;
+    color: white;
+}
+
+.warnareset {
+    background-color: darkred;
+    color: white ;
+}
+
+
+/* Animasi perputaran */
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
